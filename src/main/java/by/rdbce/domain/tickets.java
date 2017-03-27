@@ -15,7 +15,10 @@ public class tickets {
     private int ID;
 
     @Column(name = "name")
-    private String NAME;
+    private int NAME;
+
+    @Column(name = "status")
+    private int STATUS;
 
     public int getID() {
         return ID;
@@ -25,13 +28,20 @@ public class tickets {
         this.ID = ID;
     }
 
-    public String getNAME() {
+    public int getNAME() {
         return NAME;
     }
 
-    public void setNAME(String NAME) {
+    public void setNAME(int NAME) {
         this.NAME = NAME;
     }
 
+    public int getSTATUS() {
+        return STATUS;
+    }
+
+    public void setSTATUS(int STATUS) {
+        this.STATUS = STATUS;
+    }
 }
 
